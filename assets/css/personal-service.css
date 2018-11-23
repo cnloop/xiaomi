@@ -1,0 +1,67 @@
+html,
+body {
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+
+.content>.title-item {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.content>.service-arr {
+    margin-top: 30px;
+}
+
+.content>.service-arr>.service-item {
+    margin-top: 30px;
+}
+
+.content>.service-arr>.service-item:first-child {
+    margin-top: 0px;
+}
+
+.content>.service-arr>.service-item>div:nth-child(1) {
+    background: url(../images/icon_service.png) no-repeat;
+    background-position: -160px 0;
+    width: 40px;
+    height: 40px;
+    float: left;
+
+}
+
+.content>.service-arr>.service-item>div:nth-child(2) {
+    margin-left: 10px;
+    float: left;
+}
+
+.content>.service-arr>.service-item>div:nth-child(2)>a {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    font-weight: 700;
+}
+
+.content>.service-arr>.service-item>div:nth-child(2)>span {
+    display: block;
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.content>.service-arr>.service-item>div:nth-child(1).sv4 {
+    background-position: -120px 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #757575;
+    font-size: 14px;
+}

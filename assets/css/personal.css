@@ -1,0 +1,117 @@
+.personal-top {
+    width: 960px;
+    height: 131px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.personal-top>.logo {
+    width: 112px;
+    height: 31px;
+    background: url('../images/n-logo.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+.personal-top>.logout {
+    font-size: 14px;
+    color: #ababab;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+.personal-top>.logout:hover {
+    color: #ff6700;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 960px;
+    height: 44px;
+}
+
+.nav>span {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    float: left;
+    margin-right: 68px;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+}
+
+.nav>span:first-child {
+    margin-left: 35px;
+}
+
+.nav>span.selectedNav {
+    color: #ff7e00;
+}
+
+.nav>span.selectedNav:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23px;
+    height: 12px;
+    background: url('../images/n-layout-corner.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.nav-avatar {
+    float: right;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e3e3e3;
+    border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+    margin-right: 35px;
+    margin-top: -24px;
+}
+
+.nav-avatar>div {
+    height: 100%;
+    background: url('../images/n-avator-bg.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.personal-info {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.personal-info>p:first-child {
+    color: #999;
+}
+
+.personal-info>p:last-child {
+    color: #666;
+}
+
+
+.content {
+    width: 960px;
+    min-height: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 34px 34px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    margin-top: -1px;
+    border-radius: 8px;
+}

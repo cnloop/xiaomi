@@ -1,0 +1,79 @@
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+body,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    padding: 5px 11px;
+    border: 1px solid #ccc;
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 0px;
+}
+
+html {
+    font-family: "Microsoft YaHei"
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}

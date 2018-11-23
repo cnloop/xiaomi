@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/personal.css">
+    <link rel="stylesheet" href="./assets/css/personal-account.css">
+</head>
+
+<body>
+    <div class="personal-top">
+        <div class="logo"></div>
+        <div class="logout">退出</div>
+    </div>
+    <div class="nav">
+        <span class="selectedNav">账号安全</span>
+        <span>个人信息</span>
+        <span>今日融服务</span>
+        <div class="nav-avatar">
+            <div></div>
+        </div>
+        <div class="personal-info">
+            <p>请设置名字</p>
+            <p>2180468593</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="account-pwd">
+            <div class="icon"></div>
+            <div class="text">
+                <div>帐号密码</div>
+                <div>用于保护帐号信息和登录安全</div>
+            </div>
+            <div class="set" onclick="showTips()">设置</div>
+        </div>
+    </div>
+    <div class="tips" id="tips">
+        <div class="tips-content">
+            <div class="close-icon" onclick="closeTips()"></div>
+            <div class="title">设置密码</div>
+            <div class="desc">新密码</div>
+            <div class="input-wrap">
+                <input type="text" placeholder="输入新密码">
+            </div>
+            <div class="input-wrap">
+                <input type="text" placeholder="重复新密码">
+            </div>
+            <div class="warn">
+                <div class="warn-1">
+                    <img src="./assets/images/warn.png">
+                    <span>密码长度8~16位，数字、字母、字符至少包含两种</span>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="confirm">确认</div>
+                <div class="cancel" onclick="closeTips()">取消</div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        ©2016-2018 今日融 ( 皖ICP备18003911号 )
+    </div>
+    <script>
+        var tips = document.getElementById('tips')
+
+        function showTips() {
+            tips.style.display = 'block'
+        }
+
+        function closeTips() {
+            tips.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>

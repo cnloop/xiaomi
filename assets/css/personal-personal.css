@@ -1,0 +1,328 @@
+html,
+body {
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.content {
+    padding: 40px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.content>.left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.content>.right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.content>.left>.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.content>.left>.wrap>.avatar {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid #e3e3e3;
+    border-radius: 50%;
+    padding: 4px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.content>.left>.wrap>.avatar>span {
+    width: 43px;
+    height: 43px;
+    background: url('../images/n-ava-edit.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.content>.left>.wrap>.avatar:hover>span {
+    display: block;
+}
+
+.content>.left>.wrap>.avatar>div {
+    height: 100%;
+    background: url('../images/n-avator-bg.png') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.content>.left>.wrap>.set-avatar {
+    text-align: center;
+    color: #4a90e3;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.content>.right>.title {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.content>.right>.title>div:first-child {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    float: left;
+}
+
+.content>.right>.title>div:last-child {
+    float: right;
+    color: #4a90e3;
+    font-size: 14px;
+}
+
+.content>.right>.title>div:last-child>img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+
+.content>.right>.accont-item {
+    height: 40px;
+    line-height: 40px;
+}
+
+.content>.right>.accont-item>span:first-child {
+    font-size: 14px;
+    color: #666;
+}
+
+.content>.right>.accont-item>span:last-child {
+    font-size: 14px;
+    color: #999;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #757575;
+    font-size: 14px;
+}
+
+.upload-avatar {
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(51, 51, 51, 0.7)
+}
+
+.upload-avatar-content {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 442px;
+    padding: 30px 14px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.upload-avatar-content>.close-icon {
+    width: 8px;
+    height: 8px;
+    background: url('../images/close.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.upload-avatar-content>.title {
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e1e1e;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.upload-avatar-content>.select-btn {
+    margin: 0 auto;
+    width: 202px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.upload-avatar-content>.select-btn>input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-avatar-content>.desc {
+    width: 202px;
+    font-size: 14px;
+    color: #ada7a7;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.upload-avatar-content>.cancel {
+    width: 122px;
+    height: 35px;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+
+.set-personal-info {
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(51, 51, 51, 0.7)
+}
+
+.set-personal-info-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 442px;
+    padding: 30px 14px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.set-personal-info-content>.close-icon {
+    width: 8px;
+    height: 8px;
+    background: url('../images/close.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.set-personal-info-content>.title {
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e1e1e;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.set-personal-info-content>.edit-item {
+    width: 360px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.set-personal-info-content>.edit-item>span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.set-personal-info-content>.edit-item>div {
+    width: 285px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    box-sizing: border-box;
+    float: right;
+}
+
+.set-personal-info-content>.edit-item>div>input {
+    background: 0;
+    border: 0 none;
+    outline: none;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 13px;
+    box-sizing: border-box;
+    color: #ada7a7;
+}
+
+.set-personal-info-content>.edit-item>div>input::placeholder {
+    color: #ada7a7;
+}
+
+
+.set-personal-info-content>.btn {
+    width: 360px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.set-personal-info-content>.btn>.confirm {
+    width: 122px;
+    height: 100%;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+    color: #fff;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.set-personal-info-content>.btn>.cancel {
+    width: 122px;
+    height: 100%;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/personal.css">
+    <link rel="stylesheet" href="./assets/css/personal-personal.css">
+
+</head>
+
+<body>
+    <div class="personal-top">
+        <div class="logo"></div>
+        <div class="logout">退出</div>
+    </div>
+    <div class="nav">
+        <span>账号安全</span>
+        <span class="selectedNav">个人信息</span>
+        <span>今日融服务</span>
+        <div class="nav-avatar">
+            <div></div>
+        </div>
+        <div class="personal-info">
+            <p>请设置名字</p>
+            <p>2180468593</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="wrap" onclick="showTips()">
+                <div class="avatar">
+                    <div></div>
+                    <span></span>
+                </div>
+                <div class="set-avatar" onclick="showTips()">设置头像</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <div>基本资料</div>
+                <div onclick="showSetPersonalInfo()">
+                    <img src="./assets/images/edit.png">
+                    <span>编辑</span>
+                </div>
+            </div>
+            <div class="account-name accont-item">
+                <span>姓名：</span>
+                <span>请设置姓名</span>
+            </div>
+            <div class="account-sfz accont-item">
+                <span>身份证号：</span>
+                <span>请设置身份证号</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        ©2016-2018 今日融 ( 皖ICP备18003911号 )
+    </div>
+    <div class="upload-avatar" id="upload-avatar">
+        <div class="upload-avatar-content">
+            <div class="close-icon" onclick="closeTips()"></div>
+            <div class="title">设置头像</div>
+            <div class="select-btn">
+                上传头像
+                <input type="file">
+            </div>
+            <div class="desc">jpg或png，大小不超过2M</div>
+            <div class="cancel" onclick="closeTips()">取消</div>
+        </div>
+    </div>
+    <div class="set-personal-info" id="set-personal-info">
+        <div class="set-personal-info-content">
+            <div class="close-icon" onclick="closeSetPersonalInfo()"></div>
+            <div class="title">编辑基础资料</div>
+            <div class="edit-item edit-name">
+                <span>姓名：</span>
+                <div>
+                    <input type="text" placeholder="姓名">
+                </div>
+            </div>
+            <div class="edit-item edit-sdz">
+                <span>身份证：</span>
+                <div>
+                    <input type="text" placeholder="身份证">
+                </div>
+            </div>
+            <div class="btn">
+                <div class="confirm">确认</div>
+                <div class="cancel" onclick="closeSetPersonalInfo()">取消</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var uploadAvatar = document.getElementById('upload-avatar')
+        var setPersonalInfo = document.getElementById('set-personal-info')
+
+
+        function showTips() {
+            uploadAvatar.style.display = 'block'
+        }
+
+        function closeTips() {
+            uploadAvatar.style.display = 'none'
+        }
+
+        function showSetPersonalInfo() {
+            setPersonalInfo.style.display = 'block'
+        }
+
+        function closeSetPersonalInfo() {
+            setPersonalInfo.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
